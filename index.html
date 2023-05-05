@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>More Javascript Practice</h1>
+    <br>
+    <section id="blogs">
+        <article class="blog">
+            <h1 id="title-1">The Blog 1</h1>
+            <p>
+                Lorem ipsum ipsum amet ea et est. Sanctus sea rebum duo dolores dolor labore sea gubergren. Ipsum justo dolores dolore ipsum justo lorem eos. Vero est et dolores erat, ea.
+            </p>
+        </article>
+    
+        <article class="blog">
+            <h1 id="blog-2">The Blog 2</h1>
+            <p>
+                Lorem ipsum ipsum amet ea et est. Sanctus sea rebum duo dolores dolor labore sea gubergren. Ipsum justo dolores dolore ipsum justo lorem eos. Vero est et dolores erat, ea.
+            </p>
+        </article>
+    
+        <article class="blog">
+            <h1>The Blog 3</h1>
+            <p>
+                Lorem ipsum ipsum amet ea et est. Sanctus sea rebum duo dolores dolor labore sea gubergren. Ipsum justo dolores dolore ipsum justo lorem eos. Vero est et dolores erat, ea.
+            </p>
+        </article>
+    
+        <article class="blog">
+            <h1>The Blog 4</h1>
+            <p>
+                Lorem ipsum ipsum amet ea et est. Sanctus sea rebum duo dolores dolor labore sea gubergren. Ipsum justo dolores dolore ipsum justo lorem eos. Vero est et dolores erat, ea.
+            </p>
+        </article>
+    </section>
+
+
+
+
+
+
+    <script>
+        // const title_1_style = document.getElementById("title-1");
+        // title_1_style.style.border = "2px solid red";
+        // title_1_style.style.backgroundColor = "gray";
+
+        
+
+        // text change
+        const blog_2_text_change = document.getElementById("blog-2");
+        blog_2_text_change.innerText = "text change practice";
+
+
+        // creat tag
+        const article = document.createElement("article");
+        article.classList.add("blog")
+        const h1 = document.createElement("h1");
+        h1.innerText = "The blog 5"
+        const p = document.createElement("p"); 
+        p.innerText = "Lorem ipsum ipsum amet ea et est. Sanctus sea rebum duo dolores dolor labore sea gubergren. Ipsum justo dolores dolore ipsum justo lorem eos. Vero est et dolores erat, ea.";
+        // child tag add
+        article.appendChild(h1);
+        article.appendChild(p);
+        
+
+        const section = document.getElementById("blogs");
+        section.appendChild(article);
+
+
+        
+        const blogs = document.getElementsByClassName("blog");
+        for (let blog of blogs){
+            blog.style.border = "2px solid orange"
+            blog.style.marginBottom = "10px"
+            blog.style.paddingLeft = "10px"
+            blog.style.borderRadius = "10px "
+            blog.style.backgroundColor = "pink"
+        }
+    </script>
+</body>
+</html>
